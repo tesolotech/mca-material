@@ -1,0 +1,13 @@
+<html>
+<body>
+<script>
+function Book(name, year) {
+  this.name = name;
+  this.year = '(' + year + ')';
+this.toString=function(){return this.name + this.year;}
+}
+var b=new Book('Programming in java','2010');
+document.write(b.toString());
+</script>
+</body>
+</html>

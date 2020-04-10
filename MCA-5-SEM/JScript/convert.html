@@ -1,0 +1,42 @@
+<html>
+</head>
+<script>
+/*Convert a single character to capital and vice versa*/
+function convert()
+{
+	// prompt the user to Enter the String
+	a=prompt("Enter the String","");
+	// Loop till the end of the String	
+	for(i=0;i<a.length;i++)
+	{
+		// example of instance method usage in javascript, 
+		// method "charCodeAt()" used with an instance of String i.e. a
+		// get the ascii value of the characters starting from the first character and soon till end of string
+		c=a.charCodeAt(i);
+		alert(c);
+		
+		// if ascii values lies between 97 and 123, the character lies between a and z, hence to convert its case
+		// We subtract 32 from its ascii value, which is actually the range of Capital A-Z, 65 - 90
+		if(c >= 97 && c < 123)
+		{
+			c-=32;
+			/*example of Static method usgae in javascript*/
+			/* method "fromCharCode()" used in javascript with the class name i.e. String*/
+			alert(String.fromCharCode(c));
+		}
+		// if ascii values lies between 65 and 90, the character lies between A and Z, hence to convert its case
+		// We add 32 to its ascii value, which is actually the range of small a-z, 97 - 122
+
+		else if(c >= 65 && c < 91)
+		{
+			c+=32;
+			alert(String.fromCharCode(c));
+		}	
+	}
+}
+</script>
+</head>
+<body>
+<input type="button" onclick="convert()"> 
+</body>
+</html>

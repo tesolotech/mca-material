@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+
+function demo(param)
+{
+	num=10;
+	alert(param);
+
+	p=function (){return "Hello "+param;};
+	return p;
+
+function x(){num+=1; alert(num);}
+	x();
+}
+document.write(demo("Functional Programming")+"<br>");
+document.write(p());
+</script>
+</body>
+</html>
+

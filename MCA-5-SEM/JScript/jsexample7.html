@@ -1,0 +1,17 @@
+	<html>
+<head>
+<script type="text/javascript"> 
+function announceTime()    { 
+//get the date, the hour, minutes, and seconds 
+var the_date = new Date(); 
+var the_hour = the_date.getHours(); 
+var the_minute = the_date.getMinutes(); 
+var the_second = the_date.getSeconds(); 
+//put together the string and alert with it 
+var the_time = the_hour + ":" + the_minute + ":" + the_second; 
+alert("The time is now: " + the_time); 
+}
+</script>
+<title>JavaScript Page</title>
+</head>
+<body onload="announceTime()"> Content of the Page ... </body> </html> 

@@ -1,0 +1,18 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+function outer()
+{
+	var x=10;
+	var inner = function(){alert (x);}
+	x="late to the party";
+	return inner;
+}
+var alertfunction=outer();
+alertfunction();
+</script>
+</body>
+</html>
+

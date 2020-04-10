@@ -1,0 +1,28 @@
+<html>
+</head>
+<script>
+/*Convert a single character to capital and vice versa*/
+function convert()
+{
+	// prompt the user to Enter the String
+	a=prompt("Enter the String","");
+	// Loop till the end of the String	
+	for(i=0;i<a.length;i++)
+	{
+		c=a.charCodeAt(i);
+		if(c%2==0)
+		{
+			c=c/2;
+			//alert(c);	
+			alert(c+ " : "+String.fromCharCode(c));
+		}
+		else 
+			alert(c+ " : "+String.fromCharCode(c));	
+	}
+}
+</script>
+</head>
+<body>
+<input type="button" onclick="convert()" value="Click Me to Convert"> 
+</body>
+</html>

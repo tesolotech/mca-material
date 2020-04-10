@@ -1,0 +1,46 @@
+<html>
+<head>
+<script type="text/javascript">
+function validate()
+{
+var at=document.getElementById("email").value.indexOf("@")
+var age=document.getElementById("age").value
+var fname=document.getElementById("fname").value
+
+submitok="true"
+
+if(fname.length<1)
+{
+alert("Enter your name")
+submitok=false
+document.getElementById("fname").focus()
+return false
+}
+if(isNaN(age)||age<1||age>100)
+{
+alert("The age must be number between 1 and 100 ")
+submitok=false
+document.getElementById("age").focus()
+return false
+}
+if(at<1)
+{
+alert("Not A valid email!")
+submitok=false
+document.getElementById("email").focus()
+return false
+}
+
+}
+</script>
+</head>
+
+<body>
+<form action="" onsubmit="return validate()">
+Enter ur email id<input type=text name="email" id="email"><br>
+ Enter ur age<input type=text name="age" id="age"><br>
+Enter ur first name<input type=text name="fname" id="fname"><br>
+<input type=checkbox id="mycheck" value="IE">Internet explorer<br>
+<input type=submit value="submit">
+<input type=reset value="Reset">
+</form></body></html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+<style type="text/css">
+.a {color:red;}
+.b {color:green;}
+.c {color:blue;}
+</style>
+</head>
+
+<body>
+<div id="colorText">Select below to change the color of this text</div>
+<select onchange="changeColor(this.value)">
+<option value="a">Red</option>
+<option value="b">Green</option>
+<option value="c">Blue</option>
+</select>
+
+<script type="text/javascript">
+function changeColor(value) {
+// Answer:
+document.getElementById("colorText").className = value
+}
+</script>
+</body>
+</html>

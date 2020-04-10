@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+function Outer()
+{
+	document.write("In Outer <br>");	
+	function inner(){alert("Inner");}
+	function inner1(){alert("Inner1");}
+	inner();
+	inner1();
+	document.write("after executing inner functions");	
+}
+Outer();
+</script>
+</body>
+</html>
+
